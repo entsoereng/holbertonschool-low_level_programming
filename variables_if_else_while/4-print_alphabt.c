@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main - Print alphabet in lowercase followed by newline and print all letters except q and e.
+* main - Print alphabet in lowercase, print all letters except q and e.
 * Return: lowercase alphabet by newline and all letters except q and e.
 */
 int main(void)
