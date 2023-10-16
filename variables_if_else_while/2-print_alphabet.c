@@ -3,16 +3,14 @@
 #include <stdio.h>
 
 /**
-* main - Prints alphabetes in lower case and in upper case.
-* Return: Upper case or Lower case.
+* main - Prints alphabetes in lower case followed by a new line
+* Return: Lower case followed by new line.
 */
 int main(void)
 {
-  char low;
-for (low = 'a'; low <= 'z'; low++)
-  putchar(low);
-for (low = 'A'; low <= 'Z'; low++)
-  putchar(low);
+  char c;
+for (c = 'a'; c <= 'z'; c++)
+putchar(c);
 putchar("\n");
 return (0);
 }
