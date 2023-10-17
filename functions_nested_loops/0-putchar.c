@@ -3,6 +3,9 @@
 * main - Print _putchar
 * Return: _putchar
 */
+int _putchar(char c)
+{
+return putchar(c);
 int main()
 {
 _putchar('_');
