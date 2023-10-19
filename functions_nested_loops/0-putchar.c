@@ -1,21 +1,15 @@
-
+#include "main.h"
 /**
 * main - Print _putchar
 * Return: _putchar
 */
-int _putchar(char c)
-{
-return putchar(c);
+
 int main(void)
 {
-_putchar('_');
-_putchar('p');
-_putchar('u');
-_putchar('t');
-_putchar('c');
-_putchar('h');
-_putchar('a');
-_putchar('r');
-_putchar('\n');
+  char c = "_putchar\n";
+while (c)
+{
+  _putchar(c); c++;
+}
 return (0);
 }
