@@ -1,38 +1,50 @@
 #include "main.h"
 
 /**
- * times_table - Prints the 9 times table, starting with 0
- * Return: empty output
- */
+* print_times_table - print multiplication table up to n
+* @n: integer argument
+*/
 
-void times_table(void)
+void print_times_table(int n)
 {
-int x, y, z, u, d;
-for (x = 0; x <= 9; x++)
+int row;
+int column;
+int product;
+
+if (n >= 0 && n <= 15)
 {
-for (y = 0; y <= 9; y++)
+for (row = 0; row <= n; row++)
 {
-z = x * y;
-if (z > 9)
+for (column = 0; column <= n; column++)
 {
-u = z % 10;
-d = (z - u) / 10;
-_putchar(44);
-_putchar(32);
-_putchar(d + '0');
-_putchar(u + '0');
-}
+product = (row * column);
+if (column == 0)
+_putchar('0' + product);
 else
 {
-if ( y != 0)
+_putchar(',');
+_putchar(' ');
+if (product <= 9)
 {
-_putchar(44);
-_putchar(32);
-_putchar(32);
+_putchar(' ');
+_putchar(' ');
+_putchar('0' + product);
 }
-_putchar(z + '0');
+else if (product > 9 && product < 100)
+{
+_putchar(' ');
+_putchar('0' + (product / 10));
+_putchar('0' + (product % 10));
+}
+else if (product >= 100)
+{
+_putchar('0' + (product / 100));
+_putchar('0' + ((product / 10) % 10));
+_putchar('0' + (product % 10));
+}
 }
 }
 _putchar('\n');
+}
 }
 }
