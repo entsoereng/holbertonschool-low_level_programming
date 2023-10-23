@@ -2,7 +2,7 @@
 
 /**
  * swap_int - Take in two variable integer and swap them
- * @author: emmanuel
+ * @author emmanuel
  * @a: Swaps and store address of b
  * @b: Swaps abd store address of a
  * Return 0
