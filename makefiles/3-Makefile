@@ -11,6 +11,6 @@ clean:
 oclean:
 	$(OBJ)
 fclean: 
-	$(SRC)
+	$(OBJ)$(NAME)
 re: 
-	$(SRC) $(OBJ)
+	clean all
