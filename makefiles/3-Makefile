@@ -8,3 +8,9 @@ all:$(OBJ)
 
 clean:
 	$(RM)
+oclean:
+	$(OBJ)
+fclean: 
+	$(SRC)
+re: 
+	$(SRC) $(OBJ)
