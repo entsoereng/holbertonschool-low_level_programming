@@ -1,4 +1,4 @@
-
+int _putchar(char C);
 
 void reset_to_98(int *n);
 
