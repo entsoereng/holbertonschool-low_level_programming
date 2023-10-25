@@ -6,6 +6,7 @@
 * @n: Number of elements to reverse
 * Return: reversed string
 */
+
 void reverse_array(int *a, int n)
 {
 int temp;
