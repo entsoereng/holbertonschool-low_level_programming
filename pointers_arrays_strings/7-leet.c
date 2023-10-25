@@ -18,6 +18,8 @@ int i = 0;
 int z = 0;
 while (s[i] != '\0')
 {
+while (lt[z][0] != '\0')
+{
 if (s[i] == lt[z][0])
 s[i] = lt[z][1];
 z++;
