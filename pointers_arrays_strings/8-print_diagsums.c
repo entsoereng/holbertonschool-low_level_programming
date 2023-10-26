@@ -19,8 +19,8 @@ row = 0;
 col = 0;
 while (row < size)
 {
-sum1 += (*a + row*size + col);
-sum2 += (*a + row*size + (size - 1 - col));
+sum1 += *(a + row*size + col);
+sum2 += *(a + row*size + (size - 1 - col));
 col++;
 row++;
 }
