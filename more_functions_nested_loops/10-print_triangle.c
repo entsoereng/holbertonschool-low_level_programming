@@ -14,7 +14,7 @@ void print_triangle(int size)
  * int dis"tance": is used to offset size
  * int to_print: tell how many '#' will need to print per line
  */
-int i, margin, dis; 
+int i, margin, dis;
 int to_print;
 if (size <= 0)
 {
