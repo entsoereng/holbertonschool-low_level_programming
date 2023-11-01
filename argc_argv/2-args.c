@@ -3,7 +3,7 @@
 /**
 * main - Entry point
 * @argc: count
-* @argv; string with the arguments
+* @argv: string with the arguments
 *
 * Return: Always 0
 */
