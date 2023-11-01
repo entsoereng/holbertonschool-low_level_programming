@@ -23,7 +23,7 @@ for (c = 0; argv[i][c] != '\0'; c++)
 if (!isdigit(argv[i][c]))
 {
 printf("Error\n");
-return (1)
+return (1);
 }
 }
 sum += atoi(argv[i]);
