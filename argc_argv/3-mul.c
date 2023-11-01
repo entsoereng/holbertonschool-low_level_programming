@@ -9,8 +9,7 @@
 */
 int main(int argc, char *argv[])
 {
-int i;
-sum = 1;
+int i, sum = 1;
 /*one for app name and two for int values */
 if (argc != 3)
 {
