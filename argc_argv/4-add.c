@@ -18,7 +18,7 @@ return (0);
 }
 for (i = 1; i < argc; i++)
 {
-for (c = 0; argv[i][c] != '\0; c++)
+for (c = 0; argv[i][c] != '\0'; c++)
 {
 if (!isdigit(argv[i][c]))
 {
