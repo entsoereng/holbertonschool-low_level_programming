@@ -24,7 +24,7 @@ if (str == NULL)
 return (NULL);
 c = 0;
 while (c < (a + b))
-{	
+{
 if (c < a)
 str[c] = s1[c];
 else
