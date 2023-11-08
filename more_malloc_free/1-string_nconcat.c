@@ -21,7 +21,7 @@ for (; s2[b]; b++)
 ;
 if (!(n >= b))
 b = n;
-str = malloc(sizeof(char) * (a + b)+ 1);
+str = malloc(sizeof(char) * (a + b)+1);
 if (!str)
 return (NULL);
 for (i = 0; i < (a + b); i++)
