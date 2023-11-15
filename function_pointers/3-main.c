@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define ARGV(X, S) (argv[X][0] == S)
+#define ARGV(X, S) (argv[X][0] == (S))
 /**
  * main - entry point
  * @argc: number arguments
@@ -23,7 +23,7 @@ exit(98);
 a_int = atoi(argv[1]);
 b_int = atoi(argv[3]);
 op = argv[2];
-if ((ARGV(2, '\') || ARGV(2, '%')) && b_int == 0)
+if ((ARGV(2, '\\') || ARGV(2, '%')) && b_int == 0)
 {
 printf("Error\n");
 exit(100);
