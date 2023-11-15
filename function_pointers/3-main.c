@@ -1,39 +1,38 @@
+#include <stdlib.h>
 #include "3-calc.h"
 #include <stdio.h>
-#include <stdlib.h>
 
-#define ARGV(X, S) (argv[X][0] == (S))
 /**
- * main - entry point
- * @argc: number arguments
- * @argv: the string value of the argument
+ * main - Entry point
+ * @argc: Argument count
+ * @argv: Argument vector
  *
- * Return: 0
- *
+ * Return: Always 0 (Success)
  */
 int main(int argc, char *argv[])
 {
-int a_int, b_int, result;
-char *op;
+int num1, num2, result;
+int (*op_func)(int, int);
+
 if (argc != 4)
 {
 printf("Error\n");
-exit(98);
+return (98);
 }
-a_int = atoi(argv[1]);
-b_int = atoi(argv[3]);
-op = argv[2];
-if ((ARGV(2, '\\') || ARGV(2, '%')) && b_int == 0)
+num1 = atoi(argv[1]);
+num2 = atoi(argv[3]);
+op_func = get_op_func(argv[2]);
+if (op_func == NULL)
 {
 printf("Error\n");
-exit(100);
+return (99);
 }
-if (!(get_op_func(op)))
+if ((*argv[2] == '/' || *argv[2] == '%') && num2 == 0)
 {
 printf("Error\n");
-exit(99);
+return (100);
 }
-result = (get_op_func(op))(a_int, b_int);
+result = op_func(num1, num2);
 printf("%d\n", result);
 return (0);
 }
