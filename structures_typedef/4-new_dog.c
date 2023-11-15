@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * _strcopy - copy read only data 
+ * _strcopy - copy read only data
  * @dst: pointer to copy char
  * @src: read data
  */
