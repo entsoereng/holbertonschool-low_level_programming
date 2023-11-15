@@ -22,5 +22,5 @@ while (size--)
 if (cmp(array[index - size]))
 return (index - size);
 }
-return(-1);
+return (-1);
 }
