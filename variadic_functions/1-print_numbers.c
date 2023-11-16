@@ -22,6 +22,6 @@ i++;
 if (i < n && (separator))
 printf("%s", separator);
 }
-putchar(0);
+putchar(10);
 va_end(vls);
 }
