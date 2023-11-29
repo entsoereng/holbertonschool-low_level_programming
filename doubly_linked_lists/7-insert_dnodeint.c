@@ -6,7 +6,7 @@ static dlistint_t *new_node(int n);
 /**
  * insert_dnodeint_at_index - inserts a node at a choosen position.
  * @h: pointer of a pointer to linked list
- * idx: position to add the new node
+ * @idx: position to add the new node
  * @n: value to set the new node
  *
  * Return: a pointer to the add node else NULL
